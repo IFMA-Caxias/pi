@@ -7,6 +7,7 @@ fps = capture.get(cv2.CAP_PROP_FPS)
 
 print("CV_CAP_PROP_FRAME_WIDTH: '{}'".format(frame_width))
 print("CV_CAP_PROP_FRAME_HEIGHT : '{}'".format(frame_height))
+print("CAP_PROP_FPS : '{}'".format(fps))
 
 if not capture.isOpened():
     print("Erro ao acessar camera")

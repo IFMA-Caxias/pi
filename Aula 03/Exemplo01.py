@@ -1,6 +1,6 @@
 import cv2
-capture = cv2.VideoCapture(0)
-# capture = cv2.VideoCapture("IFMA Campus Caxias.mp4")
+# capture = cv2.VideoCapture(0)
+capture = cv2.VideoCapture("IFMA Campus Caxias.mp4")
 
 frame_width = capture.get(cv2.CAP_PROP_FRAME_WIDTH)
 frame_height = capture.get(cv2.CAP_PROP_FRAME_HEIGHT)
@@ -26,7 +26,6 @@ else:
                 print("Salvando frame...")
                 cv2.imwrite('print.jpg',frame)
                 cv2.imwrite('gray.jpg',gray)
-            
         else: break
 
 capture.release()
