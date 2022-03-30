@@ -18,12 +18,9 @@ def noise(image,prob):
                 output[i][j] = image[i][j]
     return output
 
-noise = noise(img,0.01)
+noise = noise(img,0.03)
             
 cv2.imshow('Salt & Pepper', noise)
-
-cv2.imwrite('gray.jpg',img)
-cv2.imwrite('noise.jpg',noise)
  
 cv2.waitKey(0)
 cv2.destroyAllWindows()
