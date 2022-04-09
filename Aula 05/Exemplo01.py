@@ -11,7 +11,7 @@ def addImg(img1,img2):
         for x in range(0, img1.shape[1]):
             pixel1=img1[y,x].astype(np.int32)
             pixel2=img2[y,x].astype(np.int32)
-            res[y, x] = (pixel1+pixel2)
+            res[y, x] = np.maximum(np.minimum(pixel1-pixel2,(255,255,255)),(0,0,0))
     return res
 
 cv2.namedWindow('Operacoes')
