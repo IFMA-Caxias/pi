@@ -11,8 +11,6 @@ kernel = np.ones((5,5),np.uint)
 erosion = cv2.erode(img_open,kernel,iterations = 1)
 opening = cv2.dilate(erosion,kernel,iterations = 1)
 
-
-
 # opening = cv2.morphologyEx(img_open, cv2.MORPH_OPEN, kernel)
 
 img_close = cv2.imread('j_closing.png',0)
